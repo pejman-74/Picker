@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary_color">#455a64</color>
+    <color name="primary_variant_color">#37474f</color>
+
+    <color name="main_background_color">#546e7a</color>
+
+    <color name="fab_add_icon_tint">#eceff1</color>
+</resources>

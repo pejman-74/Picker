@@ -15,7 +15,7 @@
     </fragment>
     <fragment
         android:id="@+id/addFragment"
-        android:name="com.picker.AddFragment"
+        android:name="com.picker.ui.fragment.AddFragment"
         android:label="@string/add_new_item"
         tools:layout="@layout/fragment_add" />
 </navigation>

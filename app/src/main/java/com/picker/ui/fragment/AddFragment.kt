@@ -1,8 +1,9 @@
-package com.picker
+package com.picker.ui.fragment
 
 import android.os.Bundle
 import android.view.*
 import androidx.fragment.app.Fragment
+import com.picker.R
 import com.picker.databinding.FragmentAddBinding
 
 

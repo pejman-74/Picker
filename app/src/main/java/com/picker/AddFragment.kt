@@ -1,22 +1,20 @@
-package com.picker.ui.fragment
+package com.picker
 
 import android.os.Bundle
 import android.view.*
 import androidx.fragment.app.Fragment
-import androidx.navigation.fragment.findNavController
-import com.picker.R
-import com.picker.databinding.FragmentHomeBinding
+import com.picker.databinding.FragmentAddBinding
 
 
-class HomeFragment : Fragment() {
+class AddFragment : Fragment() {
 
-    private var _vBinding: FragmentHomeBinding? = null
-    private val vBinding: FragmentHomeBinding get() = _vBinding!!
+    private var _vBinding: FragmentAddBinding? = null
+    private val vBinding: FragmentAddBinding get() = _vBinding!!
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        _vBinding = FragmentHomeBinding.inflate(inflater, container, false)
+        _vBinding = FragmentAddBinding.inflate(inflater, container, false)
         return vBinding.root
     }
 
@@ -28,13 +26,10 @@ class HomeFragment : Fragment() {
 
     override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
         super.onCreateOptionsMenu(menu, inflater)
-        inflater.inflate(R.menu.home_menu, menu)
-        menu.findItem(R.id.menu_item_add).setOnMenuItemClickListener {
-            findNavController().navigate(HomeFragmentDirections.actionHomeFragmentToAddFragment())
+        inflater.inflate(R.menu.add_menu, menu)
+        menu.findItem(R.id.menu_item_save).setOnMenuItemClickListener {
             true
         }
-
-
     }
 
     override fun onDestroyView() {

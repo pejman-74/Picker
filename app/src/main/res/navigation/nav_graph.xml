@@ -8,6 +8,14 @@
     <fragment
         android:id="@+id/homeFragment"
         android:name="com.picker.ui.fragment.HomeFragment"
-        android:label="fragment_home"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_homeFragment_to_addFragment"
+            app:destination="@id/addFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addFragment"
+        android:name="com.picker.AddFragment"
+        android:label="@string/add_new_item"
+        tools:layout="@layout/fragment_add" />
 </navigation>

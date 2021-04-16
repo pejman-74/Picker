@@ -27,6 +27,6 @@ class MainActivityTest {
     @Test
     fun launchActivity() {
         launchMainActivity()
-        onView(withId(R.id.fab_add)).check(matches(isDisplayed()))
+        onView(withId(R.id.btn_pick)).check(matches(isDisplayed()))
     }
 }

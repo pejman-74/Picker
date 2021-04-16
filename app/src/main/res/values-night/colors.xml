@@ -5,5 +5,10 @@
 
     <color name="main_background_color">#546e7a</color>
 
-    <color name="fab_add_icon_tint">#eceff1</color>
+    <color name="menu_add_icon_tint">#eceff1</color>
+
+    <color name="title_text_color">#000000</color>
+
+    <color name="description_text_color">#000000</color>
+
 </resources>

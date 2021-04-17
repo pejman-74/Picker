@@ -7,6 +7,7 @@ import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
 import dagger.hilt.components.SingletonComponent
+import kotlinx.coroutines.CoroutineDispatcher
 import javax.inject.Singleton
 
 @Module
@@ -14,6 +15,9 @@ import javax.inject.Singleton
 object RepositoryModule {
     @Provides
     @Singleton
-    fun provideMainRepository(pickItemDao: PickItemDao): MainRepositoryInterface =
-        MainRepository(pickItemDao)
+    fun provideMainRepository(
+        pickItemDao: PickItemDao,
+        ioDispatcher: CoroutineDispatcher
+    ): MainRepositoryInterface =
+        MainRepository(pickItemDao, ioDispatcher)
 }

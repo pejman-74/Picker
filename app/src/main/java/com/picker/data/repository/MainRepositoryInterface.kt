@@ -6,5 +6,5 @@ import kotlinx.coroutines.flow.Flow
 interface MainRepositoryInterface {
     suspend fun savePickItem(pickItem: PickItem)
 
-    suspend fun allPickItems(): Flow<List<PickItem>>
+    fun allPickItems(): Flow<List<PickItem>>
 }

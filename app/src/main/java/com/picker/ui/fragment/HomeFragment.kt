@@ -3,7 +3,7 @@ package com.picker.ui.fragment
 import android.os.Bundle
 import android.view.*
 import androidx.fragment.app.Fragment
-import androidx.fragment.app.viewModels
+import androidx.fragment.app.activityViewModels
 import androidx.lifecycle.lifecycleScope
 import androidx.navigation.fragment.findNavController
 import com.picker.R
@@ -20,7 +20,7 @@ class HomeFragment : Fragment() {
 
     private var _vBinding: FragmentHomeBinding? = null
     private val vBinding: FragmentHomeBinding get() = _vBinding!!
-    private val vModel: MainViewModel by viewModels()
+    private val vModel: MainViewModel by activityViewModels()
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
